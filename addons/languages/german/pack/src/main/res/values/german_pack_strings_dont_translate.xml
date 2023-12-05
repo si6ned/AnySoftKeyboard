@@ -35,7 +35,7 @@
     <string name="de_keyboard_broad_less">Deutsch</string>
     <string name="de_keyboard_broad_less_description">broader layout with umlauts as popups</string>
     <string name="de_keyboard_extra_less">Deutsch+</string>
-    <string name="de_keyboard_extra_description">broader layout with umlauts as popups, command bar</string>
+    <string name="de_keyboard_extra_less_description">broader layout with umlauts as popups, command bar</string>
     <string name="de_keyboard_equal">Deutsch-</string>
     <string name="de_keyboard_equal_description">narrow layout with umlauts</string>
     <string name="de_keyboard_morse">Morse</string>
