@@ -2,7 +2,7 @@
 <Keyboards>
     <Keyboard
         defaultDictionaryLocale="de"
-        defaultEnabled="true"
+        defaultEnabled="false"
         description="@string/de_keyboard_description"
         iconResId="@drawable/ic_status_german"
         id="5a1b25da-c17d-4be1-ad8e-3e24333341ec"
@@ -140,4 +140,25 @@
         layoutResId="@xml/de_qwertz_extended"
         nameResId="@string/de_keyboard_extended"
         physicalKeyboardMappingResId="@xml/german_physical"/>
+    <!-- EIGENE LAYOUTS -->
+    <Keyboard nameResId="@string/de_keyboard_broad_less" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_qwertz_broad_less" id="b2d64045-9b4f-4968-9ae4-1de39d3212ae"
+        defaultDictionaryLocale="de" description="@string/de_keyboard_broad_less_description"
+        index="15" defaultEnabled="false"
+        physicalKeyboardMappingResId="@xml/german_physical" />
+    <Keyboard nameResId="@string/de_keyboard_extra_less" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_qwertz_extra_less" id="0a15d16c-e70e-415c-ab0e-ea96242be70d"
+        defaultDictionaryLocale="de" description="@string/de_keyboard_extra_description"
+        index="16" defaultEnabled="true"
+        physicalKeyboardMappingResId="@xml/german_physical" />
+    <Keyboard nameResId="@string/de_keyboard_equal" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_qwertz_equal" id="14d83e37-0182-4162-9dac-b32f7c4d5d34"
+        defaultDictionaryLocale="de" description="@string/de_keyboard_equal_description"
+        index="17" defaultEnabled="false"
+        physicalKeyboardMappingResId="@xml/german_physical" />
+    <Keyboard nameResId="@string/de_keyboard_morse" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_morse" id="6fd89f70-2668-4d26-a00e-2883089636d4"
+        defaultDictionaryLocale="de"
+        index="18" defaultEnabled="false"
+        physicalKeyboardMappingResId="@xml/german_physical" />
 </Keyboards>
