@@ -1,42 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<!-- key codes: http://r12a.github.io/apps/conversion/
-	Functional Key Codes:
-		9	Tab ( ->| )
-		-1	Shift
-		-2	Symbols Button
-		-3	Tastatur minimieren
-		-4	Spracheingabe
-		-5	Backspace
-		-8	Delete
-		-9	.com
-		-10	Emojis
-		-11	Ctrl
-		-20	Cursor nach links
-		-21	Cursor nach rechts
-		-22	Cursor nach hoch
-		-23	Cursor nach runter
-		-24	POS1
-		-25	ENDE
-		<Key android:codes="@integer/key_code_mode_symbols" ask:isFunctional="true"/>
-			key_code_mode_symbols
-			key_code_mode_alphabet
-			key_code_mode_alphabet_popup
-			key_code_cancel
-			key_code_clear_input
-			key_code_clipboard_copy
-			key_code_clipboard_cut
-			key_code_clipboard_paste
-			key_code_clipboard_select
-			key_code_clipboard_select_all
-			key_code_ctrl
-			key_code_delete_word
-			key_code_enter
-			key_code_esc
-			key_code_shift
-			key_code_tab
-	Unicode Symbole und Nummern https://en.wikipedia.org/wiki/List_of_Unicode_characters -->
 	
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ask="http://schemas.android.com/apk/res-auto"

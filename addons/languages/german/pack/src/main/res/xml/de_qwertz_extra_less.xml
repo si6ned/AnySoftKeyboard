@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!-- key codes: http://r12a.github.io/apps/conversion/
+	Functional Key Codes:
+		9	Tab ( ->| )
+		-1	Shift
+		-2	Symbols Button
+		-3	Tastatur minimieren
+		-4	Spracheingabe
+		-5	Backspace
+		-8	Delete
+		-9	.com
+		-10	Emojis
+		-11	Ctrl
+		-20	Cursor nach links
+		-21	Cursor nach rechts
+		-22	Cursor nach hoch
+		-23	Cursor nach runter
+		-24	POS1
+		-25	ENDE
+		(-130 Copy
+		-131 Cut
+		-132 Paste)
+		<Key android:codes="@integer/key_code_mode_symbols" ask:isFunctional="true"/>
+			key_code_mode_symbols
+			key_code_mode_alphabet
+			key_code_mode_alphabet_popup
+			key_code_cancel
+			key_code_clear_input
+			key_code_clipboard_copy
+			key_code_clipboard_cut
+			key_code_clipboard_paste
+			key_code_clipboard_select
+			key_code_clipboard_select_all
+			key_code_ctrl
+			key_code_delete_word
+			key_code_enter
+			key_code_esc
+			key_code_shift
+			key_code_tab
+	Unicode Symbole und Nummern https://en.wikipedia.org/wiki/List_of_Unicode_characters -->
 
 <!-- key codes: http://r12a.github.io/apps/conversion/ -->
 <!-- Unicode Symbole und Nummern https://en.wikipedia.org/wiki/List_of_Unicode_characters -->
@@ -13,8 +52,8 @@
 		<Key android:codes="-21" android:isRepeatable="true"/>
 		<Key android:codes="-24"/>
 		<Key android:codes="-25"/>
-		<Key android:codes="@integer/key_code_clipboard_copy"/>
-		<Key android:codes="@integer/key_code_clipboard_cut"/>
+		<Key android:codes="@integer/key_code_delete_word" android:keyLabel="«"/>
+		<Key android:codes="-10"/>
 		<Key android:codes="@integer/key_code_clipboard_paste"/>
 		<Key android:codes="246" android:keyLabel="ö"/>
 		<Key android:codes="228" android:keyLabel="ä"/>
@@ -74,13 +113,12 @@
 
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-10" android:keyWidth="10%p" android:isModifier="true" ask:longPressCode="-102" ask:isFunctional="true" android:keyEdgeFlags="left"/>
-        <Key android:codes="63" android:keyLabel="?" android:popupCharacters="!/@&amp;¿¡\u2e2e‽"/>
+        <Key android:codes="33" android:keyLabel="!" android:keyWidth="10%p" android:popupCharacters="/\\@&amp;"/> android:keyEdgeFlags="left"/>
+        <Key android:codes="63" android:keyLabel="?" android:popupCharacters="¿¡\u2e2e‽"/>
         <Key android:codes="44" android:keyLabel="," ask:shiftedCodes="8211" android:popupCharacters="()"/>
         <Key android:codes="32" android:keyWidth="40%p" ask:isFunctional="true" android:isRepeatable="true"/>
         <Key android:codes="46" android:keyLabel="." ask:shiftedCodes="8226" android:popupCharacters=":;-_~"/>
         <Key android:codes="39" android:keyLabel="'" android:popupCharacters="\u0022“„”‘’"/>
         <Key android:codes="10" android:keyWidth="10%p" ask:longPressCode="-100" android:keyEdgeFlags="right"/>
     </Row>
-		<!--Key android:codes="@integer/key_code_mode_symbols" ask:isFunctional="true"-->
 </Keyboard>
