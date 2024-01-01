@@ -113,7 +113,7 @@
 
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="33" android:keyLabel="!" android:keyWidth="10%p" android:popupCharacters="/\\@&amp;"/> android:keyEdgeFlags="left"/>
+        <Key android:codes="33" android:keyLabel="!" android:keyWidth="10%p" android:popupCharacters="🙂😄😂😉😜😅😊🤗😕😧🙁👍👎👌🙈🤷" ask:hintLabel="☻"/> android:keyEdgeFlags="left"/>
         <Key android:codes="63" android:keyLabel="?" android:popupCharacters="¿¡\u2e2e‽"/>
         <Key android:codes="44" android:keyLabel="," ask:shiftedCodes="8211" android:popupCharacters="()"/>
         <Key android:codes="32" android:keyWidth="40%p" ask:isFunctional="true" android:isRepeatable="true"/>
