@@ -27,11 +27,11 @@
         <Key android:codes="114" android:keyLabel="r"  android:popupCharacters="$"/>
         <Key android:codes="116" android:keyLabel="t"  android:popupCharacters="£"/>
         <Key android:codes="122" android:keyLabel="z"  android:popupCharacters="¥"/>
-        <Key android:codes="117" android:keyLabel="u"  android:popupCharacters="☐☒✔❌❓⭐⚠⏳⛔©®™"/>
+        <Key android:codes="117" android:keyLabel="u"  android:popupCharacters="☐☒✔❌❓⭐⚠⏳📅⏰⛔⚪⚫©®™"/>
         <Key android:codes="105" android:keyLabel="i"  android:popupCharacters="αβγδεζηθικλμνξοπρςστυφχψω"/>
         <Key android:codes="111" android:keyLabel="o"  android:popupCharacters="Σ∏∫∮∂√∛∞Δ∇⊥∥∦∢"/>
         <Key android:codes="112" android:keyLabel="p"  android:popupCharacters="∧∨∩∪⊂⊆⊄∈∉∀∃∄∅ℂℝℚℤℕ"/>
-        <Key android:codes="252" android:keyLabel="ü" android:popupCharacters="☼⛈☂☁⛅❄♥☎⏰📅⛽⛟⛾⚖☮☯☣☢" android:keyEdgeFlags="right"/>
+        <Key android:codes="252" android:keyLabel="ü" android:popupCharacters="☼⛈☂☁⛅❄♥☎☕🍳🍺🎉⛽⛟⛴♫☮☯" android:keyEdgeFlags="right"/>
     </Row>
     
     <Row android:keyWidth="9.09%p">

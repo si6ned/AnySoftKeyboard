@@ -29,9 +29,9 @@
         <Key android:codes="116" android:keyLabel="t" android:popupCharacters=""/>
         <Key android:codes="122" android:keyLabel="z" android:popupCharacters=""/>
         <Key android:codes="117" android:keyLabel="u" android:popupCharacters="ü"/>
-        <Key android:codes="105" android:keyLabel="i" android:popupCharacters="☐☒✔❌❓⭐⚠⏳⛔©®™"/>
+        <Key android:codes="105" android:keyLabel="i" android:popupCharacters="☐☒✔❌❓⭐⚠⏳📅⏰⛔⚪⚫©®™"/>
         <Key android:codes="111" android:keyLabel="o" android:popupCharacters="ö"/>
-        <Key android:codes="112" android:keyLabel="p" android:popupCharacters="☼⛈☂☁⛅❄♥☎⏰📅⛽⛟⛾⚖☮☯☣☢" android:keyEdgeFlags="right"/>
+        <Key android:codes="112" android:keyLabel="p" android:popupCharacters="☼⛈☂☁⛅❄♥☎☕🍳🍺🎉⛽⛟⛴♫☮☯" android:keyEdgeFlags="right"/>
     </Row>
     
     <Row android:keyWidth="10%p">

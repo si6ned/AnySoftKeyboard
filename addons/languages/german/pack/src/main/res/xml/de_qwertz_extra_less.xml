@@ -50,10 +50,10 @@
 	<Row android:rowEdgeFlags="top" android:keyHeight="@integer/key_short_height">
 		<Key android:codes="-20" android:isRepeatable="true" android:keyEdgeFlags="left"/>
 		<Key android:codes="-21" android:isRepeatable="true"/>
-		<Key android:codes="-24"/>
-		<Key android:codes="-25"/>
-		<Key android:codes="@integer/key_code_delete_word" android:keyLabel="«"/>
+        <Key android:codes="-24"/>
+        <Key android:codes="-25"/>
 		<Key android:codes="-10"/>
+        <Key android:codes="@integer/key_code_clipboard_copy"/>
 		<Key android:codes="@integer/key_code_clipboard_paste"/>
 		<Key android:codes="246" android:keyLabel="ö"/>
 		<Key android:codes="228" android:keyLabel="ä"/>
@@ -82,8 +82,8 @@
         <Key android:codes="122" android:keyLabel="z" android:popupCharacters="żžź" ask:hintLabel=" "/>
         <Key android:codes="117" android:keyLabel="u" android:popupCharacters="ùúûüŭűū" ask:hintLabel=" "/>
         <Key android:codes="105" android:keyLabel="i" android:popupCharacters="ìíîïłīι" ask:hintLabel=" "/>
-        <Key android:codes="111" android:keyLabel="o" android:popupCharacters="☐☒✔❌❓⭐⚠⏳⛔òóôõō"/>
-        <Key android:codes="112" android:keyLabel="p" android:popupCharacters="☼⛈☂☁⛅❄♥☎⏰📅⛽⛟⛾⚖☮☯☣☢" android:keyEdgeFlags="right"/>
+        <Key android:codes="111" android:keyLabel="o" android:popupCharacters="☐☒✔❌❓⭐⚠⏳📅⏰⛔òóôõō"/>
+        <Key android:codes="112" android:keyLabel="p" android:popupCharacters="☼⛈☂☁⛅❄♥☎☕🍳🍺🎉⛽⛟⛴♫☮☯" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="10%p">
