@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "scripts": {
     "lint": "eslint --ext .ts js/",
     "lint-fix": "eslint --ext .ts js/ --fix",
@@ -6,7 +7,7 @@
     "pretty-fix": "prettier --write \"js/**/*.ts\"",
     "build": "tsc",
     "test": "pnpm build && mocha \"dist/**/*.test.js\"",
-    "package_approval": "ncc build dist/contributors/index.js -o .github/actions/contributors/dist",
+    "package_approval": "ncc build dist/auto_approval/index.js -o .github/actions/auto_approval/dist",
     "package": "pnpm package_approval"
   },
   "repository": "git@github.com:AnySoftKeyboard/AnySoftKeyboard.git",
@@ -22,22 +23,22 @@
   "devDependencies": {
     "@actions/core": "^1.10.1",
     "@actions/github": "^6.0.0",
-    "@types/chai": "^4.3.10",
-    "@types/mocha": "^10.0.4",
-    "@types/node": "20.9.0",
-    "@types/sinon": "^17.0.1",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.11.16",
+    "@types/sinon": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
     "@vercel/ncc": "^0.38.1",
-    "chai": "^4.3.10",
-    "eslint": "^8.53.0",
+    "chai": "^5.0.3",
+    "eslint": "^8.56.0",
     "mocha": "^10.2.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.2.4",
     "sinon": "^17.0.1",
-    "ts-loader": "^9.5.0",
-    "typescript": "^5.2.2"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "commander": "^11.1.0"
+    "commander": "^12.0.0"
   }
 }

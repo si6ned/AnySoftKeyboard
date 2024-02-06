@@ -25,6 +25,7 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
   private boolean mPrefsToShow;
 
   private int mNavigationBarMinHeight;
+  private int mExtraBottomPadding = 0;
 
   @Override
   public void onCreate() {
@@ -32,6 +33,7 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
     mNavigationBarMinHeight =
         getResources().getDimensionPixelOffset(R.dimen.navigation_bar_min_height);
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+      // use androidx.core.view.WindowInsetsCompat
       mNavigationBarHeightId =
           getResources().getIdentifier("navigation_bar_height", "dimen", "android");
       mNavigationBarShownId =
@@ -52,6 +54,22 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
                   val -> mPrefsToShow = val,
                   GenericOnError.onError("settings_key_colorize_nav_bar")));
     }
+
+    addDisposable(
+        prefs()
+            .getInteger(
+                R.string.settings_key_bottom_extra_padding_in_portrait,
+                R.integer.settings_default_bottom_extra_padding_in_portrait)
+            .asObservable()
+            .subscribe(
+                val ->
+                    mExtraBottomPadding = (int) (getResources().getDisplayMetrics().density * val),
+                GenericOnError.onError("settings_key_bottom_extra_padding_in_portrait")));
+  }
+
+  private int getMinimumBottomPadding() {
+    return (getCurrentOrientation() == Configuration.ORIENTATION_PORTRAIT ? mExtraBottomPadding : 0)
+        + mNavigationBarMinHeight;
   }
 
   private boolean doesOsShowNavigationBar() {
@@ -60,10 +78,6 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
     } else {
       return false;
     }
-  }
-
-  private boolean isInPortrait() {
-    return getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE;
   }
 
   @Override
@@ -86,9 +100,8 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
     final var w = getWindow().getWindow();
     final var inputContainer = getInputViewContainer();
     if (w != null && inputContainer != null) {
-      final var inPortrait = isInPortrait();
       final var doesOsShowNavigationBar = doesOsShowNavigationBar();
-      if (inPortrait && doesOsShowNavigationBar) {
+      if (doesOsShowNavigationBar) {
         final int navBarHeight = getNavBarHeight();
         if (navBarHeight > 0 && mPrefsToShow) {
           Logger.d(TAG, "Showing Colorized nav-bar with height %d", navBarHeight);
@@ -100,7 +113,7 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
             // Using the Compat to better handle old devices
             WindowCompat.setDecorFitsSystemWindows(w, false);
           }
-          inputContainer.setBottomPadding(Math.max(navBarHeight, mNavigationBarMinHeight));
+          inputContainer.setBottomPadding(Math.max(navBarHeight, getMinimumBottomPadding()));
         } else {
           Logger.d(
               TAG,
@@ -110,12 +123,7 @@ public abstract class AnySoftKeyboardColorizeNavBar extends AnySoftKeyboardIncog
           clearColorizedNavBar(w, inputContainer);
         }
       } else {
-        Logger.w(
-            TAG,
-            "Will not show Colorized nav-bar since isInPortrait %s and"
-                + " doesOsShowNavigationBar %s",
-            inPortrait,
-            doesOsShowNavigationBar);
+        Logger.w(TAG, "Will not show Colorized nav-bar since not doesOsShowNavigationBar");
         clearColorizedNavBar(w, inputContainer);
       }
     }

@@ -46,9 +46,10 @@ import com.menny.android.anysoftkeyboard.AnyApplication;
 import com.menny.android.anysoftkeyboard.R;
 import java.util.ArrayList;
 import java.util.List;
+import net.evendanan.pixel.MainChild;
 
 public class AnyKeyboardView extends AnyKeyboardViewWithExtraDraw
-    implements InputViewBinder, ActionsStripSupportedChild {
+    implements InputViewBinder, ActionsStripSupportedChild, MainChild {
 
   private static final int DELAY_BEFORE_POPPING_UP_EXTENSION_KBD = 35; // milliseconds
   private static final String TAG = "ASKKbdView";
@@ -127,6 +128,7 @@ public class AnyKeyboardView extends AnyKeyboardViewWithExtraDraw
                 GenericOnError.onError("settings_key_is_sticky_extesion_keyboard")));
   }
 
+  @Override
   public void setBottomOffset(int extraBottomOffset) {
     mExtraBottomOffset = Math.max(extraBottomOffset, mMinimumKeyboardBottomPadding);
     setPadding(
@@ -201,7 +203,7 @@ public class AnyKeyboardView extends AnyKeyboardViewWithExtraDraw
     }
 
     final Keyboard.Key lastKey = newKeyboard.getKeys().get(newKeyboard.getKeys().size() - 1);
-    mWatermarkEdgeX = lastKey.x + lastKey.width;
+    mWatermarkEdgeX = Keyboard.Key.getEndX(lastKey);
   }
 
   @Override
@@ -302,7 +304,7 @@ public class AnyKeyboardView extends AnyKeyboardViewWithExtraDraw
             mExtensionKey.y = mExtensionKeyboardPopupOffset;
           }
           // so the popup will be right above your finger.
-          mExtensionKey.x = (int) me.getX();
+          mExtensionKey.x = ((int) me.getX());
 
           onLongPress(extKbd, mExtensionKey, mIsStickyExtensionKeyboard, getPointerTracker(me));
           return true;

@@ -22,12 +22,9 @@
     <string name="ui_theme_settings_tile">Klavye temalarını seç ve yapılandır.</string>
     <string name="ui_effects_settings_tile">Klavye etkileri ve deneyim.</string>
     <!-- welcome -->
-    <!-- changelog -->
-    <string name="changelog">Değişiklikler</string>
     <string name="search_market_for_keyboard_addons"><i>Google Play Store</i>\'dan daha fazla klavye indir…</string>
     <string name="search_market_for_quick_key_addons">Daha fazla <i>Hızlı-Yazma</i> eklentisi için <i>Google Play Store</i>…</string>
     <string name="keyboard_theme_tweak_group">ince ayar</string>
-    <string name="close_button">Kapat</string>
     <string name="delete_button">Delete</string>
     <!-- Indicates that a word has been added to the dictionary -->
     <string name="added_word">Kaydedildi:\u0020<xliff:g id="kelime">%s</xliff:g>    </string>
@@ -339,6 +336,7 @@ bulamıyorum. Bu özellik cihazınızda çalışamaz, üzgünüz.</string>
     <string name="quick_fix_secon_disabled">…sadece ilk dilde</string>
     <string name="quick_fix_secon_disabled_summ_on">Hızlı düzeltmeler ve kısaltmalar yalnızca geçerli düzen dilinde çalışır</string>
     <string name="quick_fix_secon_disabled_summ_off">Kontrol edilmiş öntanımlı sözlükleri geçersiz kıl                  Hızlı düzeltmeler ve kısaltmalar her dilde çalışacak          </string>
+    <string name="try_split_words_for_correction">Yazılan sözcüğü bölerek düzelt</string>
     <string name="try_split_words_for_correction_summary_on">Eksik BOŞLUĞU tahmin ederek yazılan kelimeyi ayır.</string>
     <string name="allow_suggestions_restart">Öneri sıfırlama</string>
     <string name="allow_suggestions_restart_summary">Imleç hareketinden sonra kelime önermeyi yeniden başlat</string>
@@ -524,8 +522,8 @@ bulamıyorum. Bu özellik cihazınızda çalışamaz, üzgünüz.</string>
     <string name="created_mem_dump_file">Bellek dökümü dosyası şurada oluşturuldu:        <xliff:g id="file_path">%s</xliff:g>
     </string>
     <string name="not_configured_with_click_here">AnySoftKeyboard kullanım için tamamen kurulu değil. Kurmak için burayı tıklatın.</string>
+    <string name="not_notification_permission_text">AnySoftKeyboard\'un bildirim gösterme izni yok. Nadiren de olsa kritik sorunları (çökmeler gibi) bildirmemiz gerekebilir.</string>
     <string name="not_configured_with_just_click_here">Buraya tıklayın</string>
-    <string name="click_for_more">daha fazla…</string>
     <!--  Strings for possible PreferenceActivity Back/Next buttons -->
     <!-- Optional button to Skip a PreferenceActivity [CHAR LIMIT=20] -->
     <string name="word_editor_action_add_word">Kelime ekle</string>
@@ -542,7 +540,6 @@ bulamıyorum. Bu özellik cihazınızda çalışamaz, üzgünüz.</string>
     <string name="setup_wizard_step_one_action"><i>Dil&amp;girişi ayarlarınıza</i> gidiniz…</string>
     <string name="setup_wizard_step_one_action_error_no_settings_activity">Hata: Cihazınız 3üncü parti klavyeleri desteklemiyor. AnySoftKeyboard aktifleştirilemedi!</string>
     <string name="setup_wizard_step_permissions_title">İzinleri etkinleştir</string>
-    <string name="setup_wizard_step_permissions_details">Bu adımda,  <i>AnySoftKeyboard</i>\'un cihazınızda bulunan kişileri okumasına izin verebilirsiniz. Bu erişimi engellemek istiyorsanız Kişiler Sözlüğünden devre dışı bırakabilirsiniz.</string>
     <string name="setup_wizard_step_two_title">AnySoftKeyboard a geç</string>
     <string name="setup_wizard_step_two_details">Sisteminiz şuan <i>AnySoftKeyboard</i>\'u kullanabilir, fakat etkin klavye olarak ayarlanmamış.\nGeçiş yaptığınızda, <i>AnySoftKeyboard</i> bütün özellikleriyle birlikte yeni ekran klavyeniz olacaktır!</string>
     <string name="setup_wizard_step_two_action">Etkin klavyeleri değiştir</string>
@@ -557,9 +554,6 @@ bulamıyorum. Bu özellik cihazınızda çalışamaz, üzgünüz.</string>
     <string name="setup_wizard_step_download_details"><i>AnySoftKeyboard</i>\'un bir çok dili desteklediğini bilmek sizi mutlu edecektir. Sadece istediğiniz dil paketini indirin ve cihazınızda herhangi bir dilde yazmanın tadını çıkarın.</string>
     <string name="setup_wizard_step_download_action">Dil paketleri indir</string>
     <string name="setup_wizard_step_download_skip_action">Atla</string>
-    <string name="ime_crashed_title">AnySoftKeyboard çöktü!</string>
-    <string name="ime_crashed_sub_text">Ah, geldiğini görmedim…</string>
-    <string name="ime_crashed_ticker">Tüh, AnySoftKeyboard çöktü, bunu beklemiyorduk…</string>
     <string name="ime_crashed_text">Maalesef <i>AnySoftKeyboard</i> ile ilgili bir problem var. Panik yapmayın, bunu düzeltmeye yardım etmek için <b>sizin</b> yapabileceğiniz bir şey var: çökme raporunu bize gönderin ve biz de bu hatayı çözmek ve sizi harika klavye deneyiminize tekrar kavuşturmak için elimizden gelenin en iyisini yapalım!\n\nEn içten özürlerimizle, Geliştirici ekibi.</string>
     <string name="ime_crashed_send_button">Gönder</string>
     <string name="ime_crashed_cancel_button">İptal</string>
@@ -574,13 +568,9 @@ bulamıyorum. Bu özellik cihazınızda çalışamaz, üzgünüz.</string>
     <string name="clipboard_paste_entries_title">Yapıştırılacak metin seçin</string>
     <string name="next_word_prefs_clear_data">Sonraki kelime verilerini temizle</string>
     <string name="next_word_prefs_clear_data_summary">Bu işlem geri alınamaz. Tüm yazma geçmişiniz silinecek.</string>
-    <string name="storage_permission_rationale">AnySoftKeyboard, yedeklemelerinizi depolamak için okuma ve yazma iznine ihtiyaç duyar.</string>
     <string name="notification_read_contacts_title">Kişilerinizi okuyabilir miyim?</string>
     <string name="notification_read_contacts_text">Size daha iyi otomatik tamamlama deneyimi sunmak için kişilerinizi okumamuz gerekmekte.</string>
-    <string name="notification_read_contacts_ticker">Kişilere erişim izni gerekli</string>
-    <string name="contacts_permissions_dialog_message">AnySoftKeyboard size kişiselleştirilmiş kelime önerini sağlamak için sizin kişiler\' inizin isimlerini kullanır: bir sözcük yazarken, yazdıklarınıza otomatik tamamlama ve düzeltme için benzer kelimeler ararız.</string>
     <string name="wizard_allow_contacts_permission">Kişiler\ tabanlı yazım önerilerine izin ver</string>
-    <string name="allow_permission">İzin ver</string>
     <string name="turn_off_contacts_dictionary">Kişi Sözlüğünü kapat</string>
     <string name="read_more_about_permissions">Izinler hakkında daha çok bilgi…</string>
     <string name="ask_beta_link_promo">Hey! Yeni <i>AnySoftKeyboard</i> sürümüne hemen ulaşmak ister misin? O halde şanslısın! <i>BETA</i> kanalı <b>SENİN</b> için açık!\nAşağıdaki linke girip giriş yap ve <i>Google Play-Store</i> ile güncellemeni al!\n\n
@@ -668,4 +658,8 @@ https://play.google.com/apps/testing/com.menny.android.anysoftkeyboard \n\nSür�
     <string name="backup_restore_not_support_before_kitkat_message">Yedekleme ve geri yükleme, KitKat\'tan önceki (sürüm 4.4) Android işletim sistemini çalıştıran cihazlarda desteklenmiyor.  Üzgünüm.</string>
     <string name="delete_all_clipboard_entries">Panoyu temizle</string>
     <string name="tip_swipe_from_backspace_to_clear">İpucu: Boşluk tuşundan sola doğru kaydırarak kelimeyi silebilirsiniz!</string>
+    <string name="notification_read_contacts_ticker">Kişilere erişim izni gerekli</string>
+    <string name="wizard_allow_notification_permission">AnySoftKeyboard\'dan bildirimlere izin ver</string>
+    <string name="setup_wizard_step_notification_permissions_details">Nadir durumlarda (örneğin uygulama çökmeleri gibi) bildirim göndermemiz gerekebilir. İzin verilmesini öneririz ancak bildirim gönderme izin vermeme uygulamanın davranışını etkilemez.</string>
+    <string name="wizard_skip_notification_permission">Bildirimlere izin verme</string>
 </resources>
