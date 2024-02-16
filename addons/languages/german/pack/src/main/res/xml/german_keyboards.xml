@@ -141,19 +141,19 @@
         nameResId="@string/de_keyboard_extended"
         physicalKeyboardMappingResId="@xml/german_physical"/>
     <!-- EIGENE LAYOUTS -->
-    <Keyboard nameResId="@string/de_keyboard_broad_less" iconResId="@drawable/ic_status_german"
-        layoutResId="@xml/de_qwertz_broad_less" id="b2d64045-9b4f-4968-9ae4-1de39d3212ae"
-        defaultDictionaryLocale="de" description="@string/de_keyboard_broad_less_description"
+    <Keyboard nameResId="@string/de_keyboard_pascal_broad" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_pascal_broad" id="b2d64045-9b4f-4968-9ae4-1de39d3212ae"
+        defaultDictionaryLocale="de" description="@string/de_keyboard_pascal_broad_description"
         index="15" defaultEnabled="false"
         physicalKeyboardMappingResId="@xml/german_physical" />
-    <Keyboard nameResId="@string/de_keyboard_extra_less" iconResId="@drawable/ic_status_german"
-        layoutResId="@xml/de_qwertz_extra_less" id="0a15d16c-e70e-415c-ab0e-ea96242be70d"
-        defaultDictionaryLocale="de" description="@string/de_keyboard_extra_less_description"
+    <Keyboard nameResId="@string/de_keyboard_pascal_extra" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_pascal_extra" id="0a15d16c-e70e-415c-ab0e-ea96242be70d"
+        defaultDictionaryLocale="de" description="@string/de_keyboard_pascal_extra_description"
         index="16" defaultEnabled="true"
         physicalKeyboardMappingResId="@xml/german_physical" />
-    <Keyboard nameResId="@string/de_keyboard_equal" iconResId="@drawable/ic_status_german"
-        layoutResId="@xml/de_qwertz_equal" id="14d83e37-0182-4162-9dac-b32f7c4d5d34"
-        defaultDictionaryLocale="de" description="@string/de_keyboard_equal_description"
+    <Keyboard nameResId="@string/de_keyboard_pascal_narrow" iconResId="@drawable/ic_status_german"
+        layoutResId="@xml/de_pascal_narrow" id="14d83e37-0182-4162-9dac-b32f7c4d5d34"
+        defaultDictionaryLocale="de" description="@string/de_keyboard_pascal_narrow_description"
         index="17" defaultEnabled="false"
         physicalKeyboardMappingResId="@xml/german_physical" />
     <Keyboard nameResId="@string/de_keyboard_morse" iconResId="@drawable/ic_status_german"

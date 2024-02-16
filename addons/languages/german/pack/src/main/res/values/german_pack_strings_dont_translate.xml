@@ -32,12 +32,12 @@
     <string name="de_keyboard_extended">German extended</string>
     <string name="de_keyboard_extended_description">German extended (without extra ß key)</string>
     <!-- EIGNE LAYOUTS -->
-    <string name="de_keyboard_broad_less">Deutsch</string>
-    <string name="de_keyboard_broad_less_description">broader layout with umlauts as popups</string>
-    <string name="de_keyboard_extra_less">Deutsch+</string>
-    <string name="de_keyboard_extra_less_description">broader layout with umlauts as popups, command bar</string>
-    <string name="de_keyboard_equal">Deutsch-</string>
-    <string name="de_keyboard_equal_description">narrow layout with umlauts</string>
+    <string name="de_keyboard_pascal_broad">Deutsch</string>
+    <string name="de_keyboard_pascal_broad_description">broader layout with umlauts as popups</string>
+    <string name="de_keyboard_pascal_extra">Deutsch+</string>
+    <string name="de_keyboard_pascal_extra_description">broader layout + command bar</string>
+    <string name="de_keyboard_pascal_narrow">Deutsch-</string>
+    <string name="de_keyboard_pascal_narrow_description">narrow layout with umlauts</string>
     <string name="de_keyboard_morse">Morse</string>
     <string name="de_keyboard_morse_description">simple Morse keyboard</string>
 
