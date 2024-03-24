@@ -69,8 +69,8 @@
         <Key android:codes="54" android:keyLabel="6" ask:shiftedCodes="36" android:popupCharacters="⁶₆⅙" ask:hintLabel=" "/>
         <Key android:codes="55" android:keyLabel="7" ask:shiftedCodes="8364" android:popupCharacters="⁷₇⅐" ask:hintLabel=" "/>
         <Key android:codes="56" android:keyLabel="8" ask:shiftedCodes="8222" android:popupCharacters="⁸₈⅛" ask:hintLabel=" "/>
-        <Key android:codes="57" android:keyLabel="9" ask:shiftedCodes="8220" android:popupCharacters="([{⁹₉⅑" ask:hintLabel="([{"/>
-        <Key android:codes="48" android:keyLabel="0" ask:shiftedCodes="8221" android:popupCharacters=")]}⁰₀⅒" ask:hintLabel=")]}" android:keyEdgeFlags="right"/>
+        <Key android:codes="57" android:keyLabel="9" ask:shiftedCodes="8220" android:popupCharacters="⁹₉⅑" ask:hintLabel=""/>
+        <Key android:codes="48" android:keyLabel="0" ask:shiftedCodes="8221" android:popupCharacters="⁰₀⅒" ask:hintLabel="" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="10%p">
@@ -113,9 +113,9 @@
 
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="33" android:keyLabel="!" android:keyWidth="10%p" android:popupCharacters="🙂😄😂😉😜😅😊🤗😕😧🙁👍👎👌🙈🤷" ask:hintLabel="☻"/> android:keyEdgeFlags="left"/>
+        <Key android:codes="33" android:keyLabel="!" android:keyWidth="10%p" android:popupCharacters="👍👎👌🤌🙈🤷🙆😊🤗😃😄😂😉😜🥳😅😢😕😳😬😒" ask:hintLabel="☻"/> android:keyEdgeFlags="left"/>
         <Key android:codes="63" android:keyLabel="?" android:popupCharacters="¿¡\u2e2e‽"/>
-        <Key android:codes="44" android:keyLabel="," ask:shiftedCodes="8211" android:popupCharacters="()"/>
+        <Key android:codes="44" android:keyLabel="," ask:shiftedCodes="8211" android:popupCharacters="()[]{}" ask:hintLabel="()"/>
         <Key android:codes="32" android:keyWidth="40%p" ask:isFunctional="true" android:isRepeatable="true"/>
         <Key android:codes="46" android:keyLabel="." ask:shiftedCodes="8226" android:popupCharacters=":;-_~"/>
         <Key android:codes="39" android:keyLabel="'" android:popupCharacters="\u0022“„”‘’"/>
