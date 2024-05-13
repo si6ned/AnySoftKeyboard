@@ -69,8 +69,8 @@
         <Key android:codes="54" android:keyLabel="6" ask:shiftedCodes="36" android:popupCharacters="⁶₆⅙" ask:hintLabel=" "/>
         <Key android:codes="55" android:keyLabel="7" ask:shiftedCodes="8364" android:popupCharacters="⁷₇⅐" ask:hintLabel=" "/>
         <Key android:codes="56" android:keyLabel="8" ask:shiftedCodes="8222" android:popupCharacters="⁸₈⅛" ask:hintLabel=" "/>
-        <Key android:codes="57" android:keyLabel="9" ask:shiftedCodes="8220" android:popupCharacters="⁹₉⅑" ask:hintLabel=""/>
-        <Key android:codes="48" android:keyLabel="0" ask:shiftedCodes="8221" android:popupCharacters="⁰₀⅒" ask:hintLabel="" android:keyEdgeFlags="right"/>
+        <Key android:codes="57" android:keyLabel="9" ask:shiftedCodes="8220" android:popupCharacters="⁹₉⅑" ask:hintLabel=" "/>
+        <Key android:codes="48" android:keyLabel="0" ask:shiftedCodes="8221" android:popupCharacters="⁰₀⅒" ask:hintLabel=" " android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="10%p">
